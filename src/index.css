@@ -110,7 +110,7 @@ footer{
 .button{
   padding: 1rem;
   border:0.1rem blueviolet;
-  background-color: crimson;
+  background-color:pink;
   cursor: pointer;
 }
 .button:hover{
@@ -135,5 +135,49 @@ footer{
 }
 
 .filter div{
+  flex:1
+}
+
+/*Cart*/
+.cart{
+  padding:1rem;
+  margin:1rem;
+  display:flex;
+  flex-wrap: wrap;
+}
+.cart-header{
+  border-bottom:0.1rem bisque solid ;
+}
+.cart-items{
+  padding:0;
+  width:100%;
+  list-style-type: none;
+}
+.cart-items img{
+  width: 5rem;
+}
+.cart-items li{
+  display: flex;
+}
+.cart-items li div{
+  padding: .5rem;
+}
+.cart-items li div:last-child{
+  flex: 1;
+}
+.right{
+  text-align: right;
+}
+.total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.total >div{
+  font-size: 2rem;
+}
+.total > button,
+.total >div{
   flex:1
 }
