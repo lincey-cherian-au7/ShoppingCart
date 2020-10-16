@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Products from './components/Products';
 import data from "./data.json"
 
@@ -32,7 +33,7 @@ class App extends React.Component {
     </div>
     );
   }
-}
+
 
 
 export default App;
