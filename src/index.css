@@ -124,3 +124,16 @@ footer{
 .productprice div{
   font-size: 2rem;
 }
+
+/*Filter*/
+.filter{
+  display:flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom:0.1rem bisque solid;
+}
+
+.filter div{
+  flex:1
+}
