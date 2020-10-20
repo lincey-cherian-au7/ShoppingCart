@@ -24,9 +24,11 @@ class Products extends Component {
     }
     render() {
         const {product} = this.state;
+        
         return (
             <div>
                 <Fade bottom cascade>
+                    
                     {!this.props.products? (<div>Loading...</div>):(
                         <ul className="products">
                             {this.props.products.map(product =>(
@@ -82,6 +84,6 @@ class Products extends Component {
     }
 }
 export default connect((state)=>(
-    {products:state.products.items}),
+    {products:state.products.filteredItems}),
     {fetchProducts})
         (Products);
